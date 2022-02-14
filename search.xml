@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>JAVA设计模式--工厂模式</title>
-    <url>/2022/02/14/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h3 id="java设计模式—-工厂模式"><a href="#java设计模式—-工厂模式" class="headerlink" title="java设计模式—-工厂模式"></a>java设计模式—-工厂模式</h3><p>这是一个非常有趣的哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> test</span><br></pre></td></tr></table></figure>
-
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>JAVA设计模式--工厂模式</title>
+      <link href="/2022/02/14/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/"/>
+      <url>/2022/02/14/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<span id="more"></span><h3 id="java设计模式—-工厂模式"><a href="#java设计模式—-工厂模式" class="headerlink" title="java设计模式—-工厂模式"></a>java设计模式—-工厂模式</h3><p>这是一个非常有趣的哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> test</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>设计模式</category>
-        <category>JAVA</category>
+          
+          <category> 设计模式 </category>
+          
+          <category> JAVA </category>
+          
       </categories>
-      <tags>
-        <tag>JAVA</tag>
-        <tag>设计模式</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> JAVA </tag>
+            
+            <tag> 设计模式 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
