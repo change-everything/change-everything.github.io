@@ -1204,7 +1204,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #7cffa4;
+  background: #3b14ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1999,38 +1999,6 @@ pre .javascript .function {
 }
 #qr > div:hover p {
   animation: roll 0.1s infinite linear;
-}
-@-moz-keyframes roll {
-  from {
-    transform: rotateZ(30deg);
-  }
-  to {
-    transform: rotateZ(-30deg);
-  }
-}
-@-webkit-keyframes roll {
-  from {
-    transform: rotateZ(30deg);
-  }
-  to {
-    transform: rotateZ(-30deg);
-  }
-}
-@-o-keyframes roll {
-  from {
-    transform: rotateZ(30deg);
-  }
-  to {
-    transform: rotateZ(-30deg);
-  }
-}
-@keyframes roll {
-  from {
-    transform: rotateZ(30deg);
-  }
-  to {
-    transform: rotateZ(-30deg);
-  }
 }
 .my_post_copyright {
   width: 85%;
@@ -2830,4 +2798,20 @@ pre {
   color: #fc6423;
   border-bottom: none;
   border-bottom: 1px solid #fc6423;
+}
+.back-to-top {
+  right: 60px;
+  width: 70px;
+  height: 900px;
+  top: -900px;
+  bottom: unset;
+  transition: all 0.5s ease-in-out;
+  background: url("/images/scroll.png");
+}
+.back-to-top > i {
+  display: none;
+}
+.back-to-top.back-to-top-on {
+  bottom: unset;
+  top: calc(100vh - 900px - 200px);
 }
