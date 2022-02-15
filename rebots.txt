@@ -3,7 +3,7 @@ Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
-
+Allow: /about/
 Disallow: /vendors/
 Disallow: /js/
 Disallow: /css/
@@ -11,5 +11,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://www.pypblog.top/sitemap.xml
-Sitemap: https://www.pypblog.top/baidusitemap.xml
+Sitemap: https://pypblog.top/sitemap.xml
+Sitemap: https://pypblog.top/baidusitemap.xml
