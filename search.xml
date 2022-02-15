@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>JAVA设计模式--迭代器模式</title>
-    <url>/project/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
+    <url>/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<h4 id="Java设计模式—-迭代器模式"><a href="#Java设计模式—-迭代器模式" class="headerlink" title="Java设计模式—-迭代器模式"></a>Java设计模式—-迭代器模式</h4><span id="more"></span>
 
 <p>为什么要使用这种设计模式呢？这种设计模式可以提高程序的可复用性，相比for循环更加的灵活，不管集合类怎么改变，只要集合的iterator方法能正确地返回Iterator实例，即使不对while循环做任何修改，也可以正常使用。</p>
@@ -34,7 +34,7 @@
   </entry>
   <entry>
     <title>JAVA设计模式--工厂模式</title>
-    <url>/project/2022/02/14/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
+    <url>/2022/02/14/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<span id="more"></span>
 
 <h3 id="java设计模式—-工厂模式"><a href="#java设计模式—-工厂模式" class="headerlink" title="java设计模式—-工厂模式"></a>java设计模式—-工厂模式</h3><p>这是一个非常有趣的哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
@@ -52,14 +52,14 @@
   </entry>
   <entry>
     <title>测试</title>
-    <url>/project/2022/02/15/%E6%B5%8B%E8%AF%95/</url>
+    <url>/2022/02/15/%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<p>c</p>
 <p>测试</p>
 ]]></content>
   </entry>
   <entry>
     <title>JAVA设计模式--装饰者模式</title>
-    <url>/project/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
+    <url>/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<span id="more"></span>
 
 <h4 id="Java-设计模式—-装饰者模式"><a href="#Java-设计模式—-装饰者模式" class="headerlink" title="Java 设计模式—-装饰者模式"></a>Java 设计模式—-装饰者模式</h4><p>测hi是</p>
