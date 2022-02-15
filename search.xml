@@ -1,51 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>JAVA设计模式--工厂模式</title>
-    <url>/2022/02/14/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h3 id="java设计模式—-工厂模式"><a href="#java设计模式—-工厂模式" class="headerlink" title="java设计模式—-工厂模式"></a>java设计模式—-工厂模式</h3><p>这是一个非常有趣的哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> test</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>设计模式</category>
-        <category>JAVA</category>
-      </categories>
-      <tags>
-        <tag>JAVA</tag>
-        <tag>设计模式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JAVA设计模式--装饰者模式</title>
-    <url>/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h4 id="Java-设计模式—-装饰者模式"><a href="#Java-设计模式—-装饰者模式" class="headerlink" title="Java 设计模式—-装饰者模式"></a>Java 设计模式—-装饰者模式</h4><p>测hi是</p>
-<p>的哇哈健康的</p>
-<p>的哇好酷的卡上好的</p>
-<p>扩大很快就会双大括号卡仕达看见啥空间</p>
-<p>对面八十八的撒旦艰苦哈</p>
-<p>的卡号开始计划的卡上</p>
-<p>爱德华授课计划打开沙河口</p>
-<p>良好的开局撒谎进口的贺卡收到快件哈克</p>
-<p>大厦的卡号是会计</p>
-<p>大家还是看记得哈空间上的卡号是的哈哈了</p>
-]]></content>
-      <categories>
-        <category>JAVA</category>
-        <category>设计模式</category>
-      </categories>
-      <tags>
-        <tag>JAVA</tag>
-        <tag>设计模式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JAVA设计模式--迭代器模式</title>
-    <url>/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
+    <url>/project/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<h4 id="Java设计模式—-迭代器模式"><a href="#Java设计模式—-迭代器模式" class="headerlink" title="Java设计模式—-迭代器模式"></a>Java设计模式—-迭代器模式</h4><span id="more"></span>
 
 <p>为什么要使用这种设计模式呢？这种设计模式可以提高程序的可复用性，相比for循环更加的灵活，不管集合类怎么改变，只要集合的iterator方法能正确地返回Iterator实例，即使不对while循环做任何修改，也可以正常使用。</p>
@@ -76,10 +33,53 @@
       </tags>
   </entry>
   <entry>
+    <title>JAVA设计模式--工厂模式</title>
+    <url>/project/2022/02/14/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h3 id="java设计模式—-工厂模式"><a href="#java设计模式—-工厂模式" class="headerlink" title="java设计模式—-工厂模式"></a>java设计模式—-工厂模式</h3><p>这是一个非常有趣的哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> test</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>设计模式</category>
+        <category>JAVA</category>
+      </categories>
+      <tags>
+        <tag>JAVA</tag>
+        <tag>设计模式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>测试</title>
-    <url>/2022/02/15/%E6%B5%8B%E8%AF%95/</url>
+    <url>/project/2022/02/15/%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<p>c</p>
 <p>测试</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>JAVA设计模式--装饰者模式</title>
+    <url>/project/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h4 id="Java-设计模式—-装饰者模式"><a href="#Java-设计模式—-装饰者模式" class="headerlink" title="Java 设计模式—-装饰者模式"></a>Java 设计模式—-装饰者模式</h4><p>测hi是</p>
+<p>的哇哈健康的</p>
+<p>的哇好酷的卡上好的</p>
+<p>扩大很快就会双大括号卡仕达看见啥空间</p>
+<p>对面八十八的撒旦艰苦哈</p>
+<p>的卡号开始计划的卡上</p>
+<p>爱德华授课计划打开沙河口</p>
+<p>良好的开局撒谎进口的贺卡收到快件哈克</p>
+<p>大厦的卡号是会计</p>
+<p>大家还是看记得哈空间上的卡号是的哈哈了</p>
+]]></content>
+      <categories>
+        <category>JAVA</category>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>JAVA</tag>
+        <tag>设计模式</tag>
+      </tags>
   </entry>
 </search>
