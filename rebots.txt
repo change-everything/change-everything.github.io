@@ -11,5 +11,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://pypblog.top/sitemap.xml
-Sitemap: https://pypblog.top/baidusitemap.xml
+Sitemap: https://www.pypblog.top/sitemap.xml
+Sitemap: https://www.pypblog.top/baidusitemap.xml
