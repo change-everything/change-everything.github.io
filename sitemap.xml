@@ -90,13 +90,6 @@
 
   
   <url>
-    <loc>https://pypblog.top/categories/JAVA/</loc>
-    <lastmod>2022-02-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://pypblog.top/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
     <lastmod>2022-02-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -104,7 +97,7 @@
   </url>
   
   <url>
-    <loc>https://pypblog.top/categories/JAVA/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    <loc>https://pypblog.top/categories/JAVA/</loc>
     <lastmod>2022-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -112,6 +105,13 @@
   
   <url>
     <loc>https://pypblog.top/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/JAVA/</loc>
+    <lastmod>2022-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://pypblog.top/categories/JAVA/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
     <lastmod>2022-02-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
