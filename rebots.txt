@@ -11,5 +11,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://change-everything.github.io/sitemap.xml
-Sitemap: https://change-everything.github.io/baidusitemap.xml
+Sitemap: https://pypblog.top/sitemap.xml
+Sitemap: https://pypblog.top/baidusitemap.xml
