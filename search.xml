@@ -22,56 +22,45 @@
 
 <h5 id="1-6-测试代码"><a href="#1-6-测试代码" class="headerlink" title="1.6 测试代码"></a>1.6 测试代码</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RunMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        BookShelf bookShelf = <span class="keyword">new</span> BookShelf();</span><br><span class="line">        bookShelf.appendBook(<span class="keyword">new</span> Book(<span class="string">&quot;Around the world in 80 days&quot;</span>));</span><br><span class="line">        bookShelf.appendBook(<span class="keyword">new</span> Book(<span class="string">&quot;Bible&quot;</span>));</span><br><span class="line">        bookShelf.appendBook(<span class="keyword">new</span> Book(<span class="string">&quot;Cinderella&quot;</span>));</span><br><span class="line">        bookShelf.appendBook(<span class="keyword">new</span> Book(<span class="string">&quot;Daddy-Long-Legs&quot;</span>));</span><br><span class="line">        bookShelf.appendBook(<span class="keyword">new</span> Book(<span class="string">&quot;Daddy-Long-Legs&quot;</span>));</span><br><span class="line">        bookShelf.appendBook(<span class="keyword">new</span> Book(<span class="string">&quot;Daddy-Long-Legs&quot;</span>));</span><br><span class="line">        Iterator iterator = bookShelf.iterator();</span><br><span class="line">        <span class="keyword">while</span> (iterator.hasNext()) &#123;</span><br><span class="line">            Book next = (Book) iterator.next();</span><br><span class="line">            System.out.println(next.getName());</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h5 id="1-7-运行结果"><a href="#1-7-运行结果" class="headerlink" title="1.7 运行结果"></a>1.7 运行结果</h5><p><img src="/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F.jpg"></p>
 <p>在测试代码中我们可以看出，不用普通数组的原因是普通数组的数据不能重复，从而可扩展性不强。如果是多线程则建议使用Vector或其他线程安全的集合类。</p>
 ]]></content>
       <categories>
-        <category>JAVA</category>
+        <category>Java设计模式</category>
       </categories>
       <tags>
-        <tag>JAVA</tag>
+        <tag>Java</tag>
         <tag>设计模式</tag>
       </tags>
   </entry>
   <entry>
-    <title>JAVA设计模式--工厂模式</title>
-    <url>/2022/02/14/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<span id="more"></span>
+    <title>JAVA设计模式-模板模式</title>
+    <url>/2022/02/17/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E6%A8%A1%E6%9D%BF%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<h4 id="Java设计模式—-模板模式"><a href="#Java设计模式—-模板模式" class="headerlink" title="Java设计模式—-模板模式"></a>Java设计模式—-模板模式</h4><span id="more"></span>
 
-<h3 id="java设计模式—-工厂模式"><a href="#java设计模式—-工厂模式" class="headerlink" title="java设计模式—-工厂模式"></a>java设计模式—-工厂模式</h3><p>这是一个非常有趣的哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> test</span><br></pre></td></tr></table></figure>
+<p>这种设计模式在父类中编写了算法，就无需再在各个子类中编写同样的算法，如果程序出现BUG就会很快锁定</p>
+<h5 id="1-1-首先创建抽象父类AbstractDisplay"><a href="#1-1-首先创建抽象父类AbstractDisplay" class="headerlink" title="1.1 首先创建抽象父类AbstractDisplay"></a>1.1 首先创建抽象父类AbstractDisplay</h5><p>父类中定义了三个方法，用于输出字符串</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> PeiYP</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2022年01月16日 22:32</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractDisplay</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">open</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title">display</span><span class="params">()</span></span>&#123;</span><br><span class="line">        open();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">            print();</span><br><span class="line">        &#125;</span><br><span class="line">        close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h5 id="1-2-创建子类CharDisplay"><a href="#1-2-创建子类CharDisplay" class="headerlink" title="1.2 创建子类CharDisplay"></a>1.2 创建子类CharDisplay</h5><p>使子类继承AbstractDisplay类，重写父类的三个抽象方法</p>
+<p>重写的方法将以特定的格式输出字符串</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> PeiYP</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2022年01月16日 22:34</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CharDisplay</span> <span class="keyword">extends</span> <span class="title">AbstractDisplay</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">char</span> aChar;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">CharDisplay</span><span class="params">(<span class="keyword">char</span> aChar)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.aChar = aChar;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">open</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.print(<span class="string">&quot;&lt;&lt;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.print(aChar);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;&gt;&gt;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-3-创建子类StringDisplay"><a href="#1-3-创建子类StringDisplay" class="headerlink" title="1.3 创建子类StringDisplay"></a>1.3 创建子类StringDisplay</h5><p>同样的继承AbstractDisplay，并重写抽象方法</p>
+<p><strong>width</strong>属性用于记录字符串长度，再同样以特定形式输出</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> PeiYP</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2022年01月16日 22:54</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StringDisplay</span> <span class="keyword">extends</span> <span class="title">AbstractDisplay</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String string;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> width;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">StringDisplay</span><span class="params">(String string)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.string = string;</span><br><span class="line">        <span class="keyword">this</span>.width = string.getBytes().length;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">open</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        printLine();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;|&quot;</span> + string + <span class="string">&quot;|&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        printLine();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">printLine</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.print(<span class="string">&quot;+&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; width; i++) &#123;</span><br><span class="line">            System.out.print(<span class="string">&quot;-&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;+&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-4-测试代码"><a href="#1-4-测试代码" class="headerlink" title="1.4 测试代码"></a>1.4 测试代码</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> PeiYP</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2022年01月16日 22:52</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RunMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        AbstractDisplay display = <span class="keyword">new</span> CharDisplay(<span class="string">&#x27;H&#x27;</span>);</span><br><span class="line">        display.display();</span><br><span class="line"></span><br><span class="line">        AbstractDisplay display1 = <span class="keyword">new</span> StringDisplay(<span class="string">&quot;Hello World.&quot;</span>);</span><br><span class="line">        display1.display();</span><br><span class="line"></span><br><span class="line">        AbstractDisplay display2 = <span class="keyword">new</span> StringDisplay(<span class="string">&quot;你好，世界。&quot;</span>);</span><br><span class="line">        display2.display();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-5-运行结果"><a href="#1-5-运行结果" class="headerlink" title="1.5 运行结果"></a>1.5 运行结果</h5><p><img src="/2022/02/17/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E6%A8%A1%E6%9D%BF%E6%A8%A1%E5%BC%8F/%E6%A8%A1%E6%9D%BF%E6%A8%A1%E5%BC%8F.jpg"></p>
+<h5 id="1-6-总结"><a href="#1-6-总结" class="headerlink" title="1.6 总结"></a>1.6 总结</h5><p>在模板模式中，父类与子类的相互协作撑起了整个程序，虽然将更多方法的实现放在父类会让子类变得轻松，但是也降低了子类的灵活性；反之，如果父类实现的方法过少，子类就会变得臃肿，而且还会导致各子类代码的重复。</p>
+<p>所以开发人员在这其中扮演一个非常重要的角色，即协调父类与子类，划分处理级别。</p>
 ]]></content>
       <categories>
-        <category>设计模式</category>
-        <category>JAVA</category>
+        <category>Java设计模式</category>
       </categories>
       <tags>
-        <tag>JAVA</tag>
-        <tag>设计模式</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>JAVA设计模式--装饰者模式</title>
-    <url>/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h4 id="Java-设计模式—-装饰者模式"><a href="#Java-设计模式—-装饰者模式" class="headerlink" title="Java 设计模式—-装饰者模式"></a>Java 设计模式—-装饰者模式</h4><p>测hi是</p>
-<p>的哇哈健康的</p>
-<p>的哇好酷的卡上好的</p>
-<p>扩大很快就会双大括号卡仕达看见啥空间</p>
-<p>对面八十八的撒旦艰苦哈</p>
-<p>的卡号开始计划的卡上</p>
-<p>爱德华授课计划打开沙河口</p>
-<p>良好的开局撒谎进口的贺卡收到快件哈克</p>
-<p>大厦的卡号是会计</p>
-<p>大家还是看记得哈空间上的卡号是的哈哈了</p>
-]]></content>
-      <categories>
-        <category>JAVA</category>
-        <category>设计模式</category>
-      </categories>
-      <tags>
-        <tag>JAVA</tag>
+        <tag>Java</tag>
         <tag>设计模式</tag>
       </tags>
   </entry>
