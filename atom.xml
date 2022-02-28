@@ -3,11 +3,11 @@
   <title>手draw饼</title>
   <icon>https://www.gravatar.com/avatar/3e4855e7647fbf1b80a5a2e4a1a17a3a</icon>
   <subtitle>记录学习笔记</subtitle>
-  <link href="https://change-everything.github.io/atom.xml" rel="self"/>
+  <link href="https://www.pypblog.top/atom.xml" rel="self"/>
   
-  <link href="https://change-everything.github.io/"/>
-  <updated>2022-02-28T14:34:16.758Z</updated>
-  <id>https://change-everything.github.io/</id>
+  <link href="https://www.pypblog.top/"/>
+  <updated>2022-02-28T14:39:51.178Z</updated>
+  <id>https://www.pypblog.top/</id>
   
   <author>
     <name>裴永鹏</name>
@@ -17,9 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Java设计模式-适配器模式</title>
+    <link href="https://www.pypblog.top/2022/02/28/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://www.pypblog.top/2022/02/28/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</id>
+    <published>2022-02-28T14:36:18.000Z</published>
+    <updated>2022-02-28T14:39:51.178Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><h4 id="Java设计模式—-适配器模式"><a href="#Java设计模式—-适配器模式" class="headerlink" title="Java设计模式—-适配器模式"></a>Java设计模式—-适配器模式</h4>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;h4 id=&quot;Java设计模式—-适配器模式&quot;&gt;&lt;a href=&quot;#Java设计模式—-适配器模式&quot; class=&quot;headerlink&quot; title=&quot;Java设计模式—-适配器模式&quot;&gt;&lt;/a&gt;Java设计模式—-适配器模式&lt;</summary>
+      
+    
+    
+    
+    <category term="Java设计模式" scheme="https://www.pypblog.top/categories/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="Java" scheme="https://www.pypblog.top/tags/Java/"/>
+    
+    <category term="设计模式" scheme="https://www.pypblog.top/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JAVA设计模式-单例模式</title>
-    <link href="https://change-everything.github.io/2022/02/28/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
-    <id>https://change-everything.github.io/2022/02/28/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</id>
+    <link href="https://www.pypblog.top/2022/02/28/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://www.pypblog.top/2022/02/28/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</id>
     <published>2022-02-28T14:03:34.000Z</published>
     <updated>2022-02-28T14:34:16.758Z</updated>
     
@@ -35,19 +63,19 @@
     
     
     
-    <category term="Java设计模式" scheme="https://change-everything.github.io/categories/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <category term="Java设计模式" scheme="https://www.pypblog.top/categories/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-    <category term="Java" scheme="https://change-everything.github.io/tags/Java/"/>
+    <category term="Java" scheme="https://www.pypblog.top/tags/Java/"/>
     
-    <category term="设计模式" scheme="https://change-everything.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <category term="设计模式" scheme="https://www.pypblog.top/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>JAVA设计模式-模板模式</title>
-    <link href="https://change-everything.github.io/2022/02/17/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E6%A8%A1%E6%9D%BF%E6%A8%A1%E5%BC%8F/"/>
-    <id>https://change-everything.github.io/2022/02/17/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E6%A8%A1%E6%9D%BF%E6%A8%A1%E5%BC%8F/</id>
+    <link href="https://www.pypblog.top/2022/02/17/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E6%A8%A1%E6%9D%BF%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://www.pypblog.top/2022/02/17/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E6%A8%A1%E6%9D%BF%E6%A8%A1%E5%BC%8F/</id>
     <published>2022-02-17T14:03:26.000Z</published>
     <updated>2022-02-17T14:43:01.514Z</updated>
     
@@ -58,19 +86,19 @@
     
     
     
-    <category term="Java设计模式" scheme="https://change-everything.github.io/categories/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <category term="Java设计模式" scheme="https://www.pypblog.top/categories/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-    <category term="Java" scheme="https://change-everything.github.io/tags/Java/"/>
+    <category term="Java" scheme="https://www.pypblog.top/tags/Java/"/>
     
-    <category term="设计模式" scheme="https://change-everything.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <category term="设计模式" scheme="https://www.pypblog.top/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
   <entry>
     <title>JAVA设计模式--迭代器模式</title>
-    <link href="https://change-everything.github.io/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/"/>
-    <id>https://change-everything.github.io/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</id>
+    <link href="https://www.pypblog.top/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://www.pypblog.top/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/</id>
     <published>2022-02-15T03:18:23.000Z</published>
     <updated>2022-02-17T14:42:18.444Z</updated>
     
@@ -81,12 +109,12 @@
     
     
     
-    <category term="Java设计模式" scheme="https://change-everything.github.io/categories/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <category term="Java设计模式" scheme="https://www.pypblog.top/categories/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
     
-    <category term="Java" scheme="https://change-everything.github.io/tags/Java/"/>
+    <category term="Java" scheme="https://www.pypblog.top/tags/Java/"/>
     
-    <category term="设计模式" scheme="https://change-everything.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <category term="设计模式" scheme="https://www.pypblog.top/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
   </entry>
   
