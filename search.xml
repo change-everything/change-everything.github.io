@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Java设计模式-适配器模式</title>
-    <url>/2022/02/28/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<h4 id="Java设计模式—-适配器模式"><a href="#Java设计模式—-适配器模式" class="headerlink" title="Java设计模式—-适配器模式"></a>Java设计模式—-适配器模式</h4>]]></content>
-      <categories>
-        <category>Java设计模式</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>设计模式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JAVA设计模式-单例模式</title>
     <url>/2022/02/28/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<h4 id="Java设计模式—-单例模式"><a href="#Java设计模式—-单例模式" class="headerlink" title="Java设计模式—-单例模式"></a>Java设计模式—-单例模式</h4><span id="more"></span>
 
-<h4 id="Java设计模式—-单例模式"><a href="#Java设计模式—-单例模式" class="headerlink" title="Java设计模式—-单例模式"></a>Java设计模式—-单例模式</h4><p>程序在运行的时候，通常会创建很多实例，但是我们有时候只需要一个实例就可以。那么我么可以用单例模式来解决这个问题。</p>
+<p>程序在运行的时候，通常会创建很多实例，但是我们有时候只需要一个实例就可以。那么我么可以用单例模式来解决这个问题。</p>
 <p>单例模式也分为饿汉式和懒汉式；</p>
 <p>下面是饿汉式的例子；</p>
 <h5 id="1-1-定义一个Singleton类，它的构造函数是private的，也就是说不能在Singleton类外部创建实例。"><a href="#1-1-定义一个Singleton类，它的构造函数是private的，也就是说不能在Singleton类外部创建实例。" class="headerlink" title="1.1 定义一个Singleton类，它的构造函数是private的，也就是说不能在Singleton类外部创建实例。"></a>1.1 定义一个Singleton类，它的构造函数是<strong>private</strong>的，也就是说不能在Singleton类外部创建实例。</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> PeiYP</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2022年01月18日 21:35</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton singleton = <span class="keyword">new</span> Singleton();</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;生成了一个实例...&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> singleton;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -109,6 +95,20 @@
 <h5 id="1-7-运行结果"><a href="#1-7-运行结果" class="headerlink" title="1.7 运行结果"></a>1.7 运行结果</h5><p><img src="/2022/02/15/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F.jpg"></p>
 <p>在测试代码中我们可以看出，不用普通数组的原因是普通数组的数据不能重复，从而可扩展性不强。如果是多线程则建议使用Vector或其他线程安全的集合类。</p>
 ]]></content>
+      <categories>
+        <category>Java设计模式</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>设计模式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java设计模式-适配器模式</title>
+    <url>/2022/02/28/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h4 id="Java设计模式—-适配器模式"><a href="#Java设计模式—-适配器模式" class="headerlink" title="Java设计模式—-适配器模式"></a>Java设计模式—-适配器模式</h4>]]></content>
       <categories>
         <category>Java设计模式</category>
       </categories>
