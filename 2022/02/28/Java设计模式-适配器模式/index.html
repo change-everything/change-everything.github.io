@@ -31,12 +31,14 @@
 <meta property="og:site_name" content="手draw饼">
 <meta property="og:description" content="Java设计模式—-适配器模式">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.pypblog.top/2022/02/28/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/adapter.jpg">
 <meta property="article:published_time" content="2022-02-28T14:36:18.000Z">
-<meta property="article:modified_time" content="2022-02-28T14:39:51.178Z">
+<meta property="article:modified_time" content="2022-02-28T15:31:48.957Z">
 <meta property="article:author" content="裴永鹏">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="设计模式">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.pypblog.top/2022/02/28/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/adapter.jpg">
 
 <link rel="canonical" href="https://www.pypblog.top/2022/02/28/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/">
 
@@ -236,7 +238,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-02-28 22:36:18 / 修改时间：22:39:51" itemprop="dateCreated datePublished" datetime="2022-02-28T22:36:18+08:00">2022-02-28</time>
+              <time title="创建时间：2022-02-28 22:36:18 / 修改时间：23:31:48" itemprop="dateCreated datePublished" datetime="2022-02-28T22:36:18+08:00">2022-02-28</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -276,7 +278,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>15</span>
+              <span>1.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -295,9 +297,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <span id="more"></span>
+        <h4 id="Java设计模式—-适配器模式"><a href="#Java设计模式—-适配器模式" class="headerlink" title="Java设计模式—-适配器模式"></a>Java设计模式—-适配器模式</h4><span id="more"></span>
 
-<h4 id="Java设计模式—-适配器模式"><a href="#Java设计模式—-适配器模式" class="headerlink" title="Java设计模式—-适配器模式"></a>Java设计模式—-适配器模式</h4>
+<p>在我们编程过程中，经常会出现一种情况，就是现有的代码没办法直接使用，需要做一些适当的变换，来适配原有的程序，所以叫做适配器模式，或者包装器模式。</p>
+<h5 id="1-1-定义Print接口"><a href="#1-1-定义Print接口" class="headerlink" title="1.1 定义Print接口"></a>1.1 定义Print接口</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 接口定义两个抽象方法输出字符串</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> PeiYP</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2022年01月15日 16:17</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Print</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">abstract</span> <span class="keyword">public</span> <span class="keyword">void</span> <span class="title">PrintWeak</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">abstract</span> <span class="keyword">public</span> <span class="keyword">void</span> <span class="title">PrintStrong</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-2-定义Banner类"><a href="#1-2-定义Banner类" class="headerlink" title="1.2 定义Banner类"></a>1.2 定义Banner类</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 此类定义要打印的字符串及其构造方法，</span></span><br><span class="line"><span class="comment"> * 定义了两个函数打印不同的字符串</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> PeiYP</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2022年01月15日 16:16</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Banner</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Banner</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">showWithParen</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;(&quot;</span> + name + <span class="string">&quot;)&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">showWithAster</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;*&quot;</span> + name + <span class="string">&quot;*&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="1-3-定义PrintBanner类"><a href="#1-3-定义PrintBanner类" class="headerlink" title="1.3 定义PrintBanner类"></a>1.3 定义PrintBanner类</h5><p>这个类就是一个适配器，它继承了Banner类以及方法，实现了Print接口也重写了方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 扮演适配器的角色，该类继承 Banner 并实现了需求</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> PeiYP</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2022年01月15日 16:20</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrintBanner</span> <span class="keyword">extends</span> <span class="title">Banner</span> <span class="keyword">implements</span> <span class="title">Print</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">PrintBanner</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(name);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">PrintWeak</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        showWithParen();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">PrintStrong</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        showWithAster();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="1-4-测试代码"><a href="#1-4-测试代码" class="headerlink" title="1.4 测试代码"></a>1.4 测试代码</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 使用继承的适配器</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> PeiYP</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2022年01月15日 16:21</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RunMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 编译类型为接口Print，运行类型为PrintBanner</span></span><br><span class="line">        Print print = <span class="keyword">new</span> PrintBanner(<span class="string">&quot;Hello&quot;</span>);</span><br><span class="line"></span><br><span class="line">        print.PrintStrong();</span><br><span class="line">        print.PrintWeak();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这里用Print类型的变量来保存PrintBanner的实例，因为我们无需在意Banner类的方法。</p>
+<h5 id="1-5-运行结果"><a href="#1-5-运行结果" class="headerlink" title="1.5 运行结果"></a>1.5 运行结果</h5><p><img src="/2022/02/28/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/adapter.jpg"></p>
+<p>main方法并不知道PrintBanner是如何实现的，这样就可以在不对主方法进行修改的情况下改变PrintBanner类的具体实现。</p>
+<p>现如今，软件的更新换代很快，常常会出现新版本和旧版本的适配问题，适配器模式对于维护新版本起到了很大的作用。</p>
+
     </div>
 
     
@@ -318,7 +334,7 @@
   <p><span>本文标题:</span>Java设计模式-适配器模式</a></p>
   <p><span>文章作者:</span>裴永鹏</a></p>
   <p><span>发布时间:</span>2022年02月28日 - 22:36:18</p>
-  <p><span>最后更新:</span>2022年02月28日 - 22:39:51</p>
+  <p><span>最后更新:</span>2022年02月28日 - 23:31:48</p>
   <p><span>原始链接:</span><a href="/2022/02/28/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/" title="Java设计模式-适配器模式">https://www.pypblog.top/2022/02/28/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://www.pypblog.top/2022/02/28/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/"  aria-label="复制成功！"></i></span>
   </p>
@@ -450,7 +466,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F"><span class="nav-text">Java设计模式—-适配器模式</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E2%80%94-%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F"><span class="nav-text">Java设计模式—-适配器模式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-%E5%AE%9A%E4%B9%89Print%E6%8E%A5%E5%8F%A3"><span class="nav-text">1.1 定义Print接口</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2-%E5%AE%9A%E4%B9%89Banner%E7%B1%BB"><span class="nav-text">1.2 定义Banner类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-3-%E5%AE%9A%E4%B9%89PrintBanner%E7%B1%BB"><span class="nav-text">1.3 定义PrintBanner类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-4-%E6%B5%8B%E8%AF%95%E4%BB%A3%E7%A0%81"><span class="nav-text">1.4 测试代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-5-%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="nav-text">1.5 运行结果</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -518,12 +534,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">8k</span>
+    <span title="站点总字数">9k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">7 分钟</span>
+    <span title="站点阅读时长">8 分钟</span>
 </div>
   <div class="powered-by">由 <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> 强力驱动
   </div>
