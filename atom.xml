@@ -6,7 +6,7 @@
   <link href="https://www.pypblog.top/atom.xml" rel="self"/>
   
   <link href="https://www.pypblog.top/"/>
-  <updated>2022-02-28T15:31:48.957Z</updated>
+  <updated>2022-03-04T15:23:35.928Z</updated>
   <id>https://www.pypblog.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JAVA设计模式-工厂模式</title>
+    <link href="https://www.pypblog.top/2022/03/04/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://www.pypblog.top/2022/03/04/JAVA%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</id>
+    <published>2022-03-04T14:57:17.000Z</published>
+    <updated>2022-03-04T15:23:35.928Z</updated>
+    
+    
+    <summary type="html">&lt;h4 id=&quot;Java设计模式—-工厂模式&quot;&gt;&lt;a href=&quot;#Java设计模式—-工厂模式&quot; class=&quot;headerlink&quot; title=&quot;Java设计模式—-工厂模式&quot;&gt;&lt;/a&gt;Java设计模式—-工厂模式&lt;/h4&gt;</summary>
+    
+    
+    
+    <category term="Java设计模式" scheme="https://www.pypblog.top/categories/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+    <category term="Java" scheme="https://www.pypblog.top/tags/Java/"/>
+    
+    <category term="设计模式" scheme="https://www.pypblog.top/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Java设计模式-适配器模式</title>
