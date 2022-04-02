@@ -2,16 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.pypblog.top/2022/04/02/%E6%88%91%E7%9A%84%E7%AE%80%E5%8E%86/</loc>
-    
-    <lastmod>2022-04-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.pypblog.top/pdf/index.html</loc>
+    <loc>https://www.pypblog.top/about/index.html</loc>
     
     <lastmod>2022-04-02</lastmod>
     
@@ -75,15 +66,6 @@
   
   <url>
     <loc>https://www.pypblog.top/categories/index.html</loc>
-    
-    <lastmod>2022-02-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.pypblog.top/about/index.html</loc>
     
     <lastmod>2022-02-14</lastmod>
     
